@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name:  node-docker
+spec:
+  type:  LoadBalancer
+  selector:
+    component: node-docker
+  ports:
+  - name:  node-docker-port
+    port:  8887
+    protocol: TCP
+    targetPort:  8887

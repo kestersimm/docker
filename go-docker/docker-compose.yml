@@ -1,0 +1,12 @@
+version: '2'
+services:
+  go-docker:
+    container_name: go-docker
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: go-docker
+    expose:
+    - 8886
+    ports:
+    - 8886:8886

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name:  python-docker
+spec:
+  type:  LoadBalancer
+  selector:
+    component: python-docker
+  ports:
+  - name:  python-docker-port
+    port:  8888
+    protocol: TCP
+    targetPort:  8888

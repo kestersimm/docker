@@ -1,0 +1,12 @@
+version: '2'
+services:
+  node-docker:
+    container_name: node-docker
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: node-docker
+    expose:
+    - 8887
+    ports:
+    - 8887:8887

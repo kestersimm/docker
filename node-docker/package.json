@@ -1,0 +1,11 @@
+{
+  "name": "node-docker",
+  "version": "1.0.0",
+  "description": "nodejs and expressjs on docker",
+  "main": "index.js",
+  "author": "kester.simm@icloud.com",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
